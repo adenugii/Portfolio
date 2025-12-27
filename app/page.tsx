@@ -9,7 +9,6 @@ import Gallery from "@/components/sections/Gallery";
 
 export default function Home() {
   return (
-    // Pastikan selection color juga Neutral/Zinc, bukan Blue
     <main className="relative min-h-screen bg-white dark:bg-black overflow-hidden selection:bg-neutral-200 dark:selection:bg-neutral-800">
       
       {/* BACKGROUND GRID (Fixed) */}
