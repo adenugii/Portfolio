@@ -1,36 +1,49 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Ade Nugroho — Portfolio
 
-## Getting Started
+<div align="center">
+  <img src="public/og-image.jpg" alt="Portfolio Preview" width="100%" />
+  
+  <p align="center">
+    <br />
+    <a href="https://portfolio-ade.vercel.app"><strong>Visit Live Site ↗</strong></a>
+    <br />
+  </p>
+</div>
 
-First, run the development server:
+## 📌 About The Project
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+This repository hosts the source code for my personal portfolio website. It serves as a digital playground to demonstrate my capability in building **high-performance**, **accessible**, and **interactive** web applications.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+The goal was to move away from static templates and build a "living" interface that reflects my specialization in **Front-End Engineering** and **Mobile Development**.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## 🛠️ Built With
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+I chose this stack to ensure scalability, type safety, and 60fps animations:
 
-## Learn More
+- **Core:** [Next.js 15 (App Router)](https://nextjs.org/) & [React 19](https://react.dev/)
+- **Language:** [TypeScript](https://www.typescriptlang.org/) (Strict Mode)
+- **Styling:** [Tailwind CSS](https://tailwindcss.com/)
+- **Motion:** [Framer Motion](https://www.framer.com/motion/)
+- **Icons:** [Lucide React](https://lucide.dev/)
+- **Deployment:** [Vercel](https://vercel.com/)
 
-To learn more about Next.js, take a look at the following resources:
+## ⚡ Engineering Highlights
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+A few technical details implemented in this project:
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+- **Physics-Based Interactions:** Custom `SpotlightCard` component that tracks mouse coordinates in real-time to create a dynamic lighting effect.
+- **Performance Optimization:** Heavy computations (like the dot-grid background) are optimized using event listeners attached to the window object to prevent unnecessary React re-renders.
+- **Responsive Design System:** Complex layouts (like the Bento Grid) automatically adapt to mobile viewports with a custom touch-friendly navigation drawer.
+- **Scroll Spy Logic:** Custom React Hook (`useActiveSection`) that calculates viewport intersection to update the navigation state dynamically.
 
-## Deploy on Vercel
+## 📬 Contact
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+I am currently open for **Front-End / Mobile Development Internships**.
+If you find the code interesting or want to collaborate, feel free to reach out!
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- **Email:** [adenugroho3112@gmail.com](mailto:adenugroho3112@gmail.com)
+- **LinkedIn:** [linkedin.com/in/adenugroho](https://linkedin.com/in/adenugroho)
+
+---
+
+*© 2025 Ade Nugroho. All Rights Reserved.*
