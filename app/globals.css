@@ -1,26 +1,72 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
+@theme {
+  /* Define Custom Colors (Semantic Naming) */
+  --color-background: oklch(0.985 0 0);
+  --color-foreground: oklch(0.145 0 0);
+  
+  --color-primary: oklch(0.205 0 0);
+  --color-primary-foreground: oklch(0.985 0 0);
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
+  --color-muted: oklch(0.97 0 0);
+  --color-muted-foreground: oklch(0.556 0 0);
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+  /* Define Fonts if needed (biasanya Next.js handle ini di layout, tapi bisa disini juga) */
+  /* --font-sans: "Inter", sans-serif; */
+  
+  /* Custom Animations for "Expert" feel */
+  --animate-fade-in: fade-in 0.5s ease-out;
+  --animate-slide-up: slide-up 0.5s ease-out;
+
+  @keyframes fade-in {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }
+  @keyframes slide-up {
+    from { transform: translateY(10px); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+  }
+
+  --animate-scroll: scroll 50s linear infinite;
+
+  @keyframes scroll {
+    from { transform: translateX(0); }
+    to { transform: translateX(-50%); }
   }
 }
 
+/* Dark Mode Utilities (jika pakai class 'dark') */
+@variant dark (&:where(.dark, .dark *));
+
+/* Base Styles */
+:root {
+  /* Variables for Light Mode */
+  --spotlight: rgba(0, 0, 0, 0.05);
+}
+
+.dark {
+  /* Variables for Dark Mode */
+  --color-background: oklch(0.145 0 0);
+  --color-foreground: oklch(0.985 0 0);
+  --color-primary: oklch(0.985 0 0);
+  --color-primary-foreground: oklch(0.145 0 0);
+  --spotlight: rgba(255, 255, 255, 0.15);
+}
+
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  background-color: var(--color-background);
+  color: var(--color-foreground);
+  /* Supaya scrollbar halus & font antialiased */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.pause-on-hover:hover {
+  animation-play-state: paused;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
 }
