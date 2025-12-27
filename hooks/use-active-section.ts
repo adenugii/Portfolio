@@ -15,7 +15,6 @@ export function useActiveSection(sectionIds: string[]) {
         });
       },
       {
-        // Trigger saat elemen berada di tengah layar (50% dari atas/bawah)
         rootMargin: "-50% 0px -50% 0px", 
         threshold: 0,
       }

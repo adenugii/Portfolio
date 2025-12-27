@@ -13,10 +13,10 @@ import {
 
 export const HERO_DATA = {
   name: "Ade Nugroho",
-  role: "Software Engineer | Front-End & Mobile Specialist",
+  role: "Software Engineer | Front-End & Mobile Enthusiast",
   location: "Batu, East Java, ID",
   status: "Open for Front-End Internships",
-  summary: "High-achieving Computer Science student with a deep passion for crafting exceptional digital experiences. As a Front-End & Mobile specialist, I bridge the gap between creative design and robust engineering, dedicating myself to building pixel-perfect, accessible, and interactive interfaces that users love.",
+  summary: "High-achieving Computer Science student with a deep passion for crafting exceptional digital experiences. As a Front-End & Mobile enthusiast, I bridge the gap between creative design and robust engineering, dedicating myself to building pixel-perfect, accessible, and interactive interfaces that users love.",
   socials: [
     {
       name: "GitHub",

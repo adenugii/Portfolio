@@ -3,14 +3,14 @@
 import Link from "next/link";
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { Menu, X } from "lucide-react"; // Import Icon Hamburger & Close
+import { Menu, X } from "lucide-react";
 import { NAV_LINKS } from "@/lib/content";
 import { ThemeToggle } from "@/components/ui/ThemeToggle";
 import { useActiveSection } from "@/hooks/use-active-section";
 import { cn } from "@/lib/utils";
 
 export default function Navbar() {
-  const [isOpen, setIsOpen] = useState(false); // State untuk Mobile Menu
+  const [isOpen, setIsOpen] = useState(false);
   const sectionIds = NAV_LINKS.map((link) => link.href.substring(1));
   const activeSection = useActiveSection(sectionIds);
 
@@ -20,7 +20,6 @@ export default function Navbar() {
     const targetId = href.replace("#", "");
     const elem = document.getElementById(targetId);
     
-    // Tutup menu mobile jika sedang terbuka
     setIsOpen(false);
 
     elem?.scrollIntoView({

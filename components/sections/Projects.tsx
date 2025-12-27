@@ -64,7 +64,6 @@ export default function Projects() {
 
   return (
     <section id="projects" className="py-24 px-6 max-w-7xl mx-auto">
-      {/* --- COPYWRITING BARU DI SINI --- */}
       <div className="mb-12 space-y-4 max-w-2xl">
         <h2 className="text-3xl md:text-5xl font-bold tracking-tight text-zinc-900 dark:text-zinc-100">
           Featured Projects

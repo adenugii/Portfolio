@@ -15,19 +15,13 @@ export default function Skills() {
       </div>
 
       <div className="relative w-full">
-        {/* Gradients Fade (Kiri & Kanan) - Agar keluar masuknya halus */}
         <div className="absolute inset-y-0 left-0 w-24 bg-gradient-to-r from-white dark:from-black to-transparent z-10 pointer-events-none" />
         <div className="absolute inset-y-0 right-0 w-24 bg-gradient-to-l from-white dark:from-black to-transparent z-10 pointer-events-none" />
 
         {/* Container Marquee */}
         <div className="flex overflow-hidden">
-          {/* Perubahan PENTING disini:
-             1. 'w-max': Agar container lebarnya mengikuti konten, tidak dibatasi layar.
-             2. Render items cukup 2 set, tapi animasi CSS hanya gerak 50%.
-          */}
           <div className="flex gap-12 animate-scroll w-max hover:[animation-play-state:paused] py-4">
             
-            {/* Render 2x: Set 1 & Set 2 */}
             {[...SKILLS, ...SKILLS].map((skill, i) => (
               <div 
                 key={i}

@@ -4,7 +4,6 @@ import { useState } from "react";
 import { motion } from "framer-motion";
 import { ArrowUpRight, Mail, Copy, Check } from "lucide-react";
 import Link from "next/link";
-import { cn } from "@/lib/utils"; // Pastikan punya utility ini, atau hapus jika tidak pakai
 
 export default function Contact() {
   const [copied, setCopied] = useState(false);
@@ -13,7 +12,7 @@ export default function Contact() {
   const handleCopy = () => {
     navigator.clipboard.writeText(email);
     setCopied(true);
-    setTimeout(() => setCopied(false), 2000); // Reset icon setelah 2 detik
+    setTimeout(() => setCopied(false), 2000);
   };
 
   return (
@@ -24,7 +23,6 @@ export default function Contact() {
         transition={{ duration: 0.5 }}
         className="space-y-8 flex flex-col items-center"
       >
-        {/* Status Badge: Menciptakan kesan profesional & available */}
         <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-emerald-100 dark:bg-emerald-900/30 border border-emerald-200 dark:border-emerald-700/50 text-emerald-700 dark:text-emerald-400 text-xs font-medium mb-4">
           <span className="relative flex h-2 w-2">
             <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
@@ -34,13 +32,12 @@ export default function Contact() {
         </div>
 
         <h2 className="text-4xl md:text-6xl font-bold tracking-tight text-zinc-900 dark:text-zinc-100 max-w-3xl">
-          Ready to build pixel-perfect experiences?
+          Let's build something extraordinary together.
         </h2>
         
-        {/* Copywriting disesuaikan dengan posisi Front-End */}
-        <p className="text-lg md:text-xl text-zinc-500 dark:text-zinc-400 max-w-2xl mx-auto leading-relaxed">
+        <p className="text-lg md:text-xl text-zinc-500 dark:text-zinc-400 max-w-3xl mx-auto leading-relaxed">
           I'm currently looking for <strong>Front-End or Mobile Development Internships</strong>. 
-          If you need someone who bridges the gap between design and engineering, let's have a chat!
+          If you need someone who bridges the gap between design and engineering, I'd love to discuss how I can contribute.
         </p>
         
         <div className="flex flex-col md:flex-row gap-4 justify-center items-center pt-8 w-full sm:w-auto">

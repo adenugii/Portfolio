@@ -58,7 +58,6 @@ export default function Experience() {
           </div>
         </motion.div>
 
-
         {/* KOLOM KANAN: Awards */}
         <motion.div 
           variants={container}

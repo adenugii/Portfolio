@@ -5,6 +5,7 @@ import Projects from "@/components/sections/Projects";
 import Experience from "@/components/sections/Experience";
 import Contact from "@/components/sections/Contact";
 import { BackgroundGrid } from "@/components/ui/BackgroundGrid";
+import Gallery from "@/components/sections/Gallery";
 
 export default function Home() {
   return (
@@ -23,6 +24,7 @@ export default function Home() {
         <Skills />
         <Projects />
         <Experience />
+        <Gallery />
         <Contact />
         
         <footer className="py-6 text-center border-t border-neutral-100 dark:border-neutral-900 bg-white/80 dark:bg-black/80 backdrop-blur-md">
