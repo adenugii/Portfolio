@@ -7,8 +7,8 @@ import SmoothScroll from "@/components/providers/SmoothScroll";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Ade Nugroho | Software Engineer",
-  description: "Portfolio of Ade Nugroho, a Software Engineer specializing in Web, AI, and Blockchain.",
+  title: "Ade Nugroho | Software Developer",
+  description: "Portfolio of Ade Nugroho, a Software Developer specializing in Web, AI, and Blockchain.",
 };
 
 export default function RootLayout({
