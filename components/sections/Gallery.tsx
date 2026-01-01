@@ -81,17 +81,34 @@ export default function Gallery() {
                 src={img.src}
                 alt={img.alt}
                 fill
-                className="object-cover transition-all duration-700 group-hover:scale-110 grayscale group-hover:grayscale-0"
+                className="object-cover transition-all duration-700 
+                  /* LOGIKA MOBILE: Tidak ada grayscale (berwarna), scale normal */
+                  grayscale-0 scale-100
+                  
+                  /* LOGIKA DESKTOP (md): Default grayscale, hover jadi warna & zoom */
+                  md:grayscale md:group-hover:grayscale-0 md:group-hover:scale-110"
                 sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
               />
             </div>
 
             {/* Overlay Caption */}
-            <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-6">
+            <div className="absolute inset-0 flex flex-col justify-end p-6 transition-opacity duration-300
+                /* MOBILE: Background gradient selalu ada, opacity text selalu 100 */
+                bg-gradient-to-t from-black/90 via-black/40 to-transparent opacity-100
+                
+                /* DESKTOP: Opacity 0 (hidden), muncul saat hover */
+                md:opacity-0 md:group-hover:opacity-100"
+            >
                 <span className="text-[10px] md:text-xs font-bold text-blue-400 uppercase tracking-widest mb-1">
                     {img.category}
                 </span>
-                <p className="text-white font-medium text-base md:text-lg leading-tight transform translate-y-4 group-hover:translate-y-0 transition-transform duration-300">
+                <p className="text-white font-medium text-base md:text-lg leading-tight transform transition-transform duration-300
+                    /* MOBILE: Posisi tetap (tidak geser) */
+                    translate-y-0
+                    
+                    /* DESKTOP: Geser dari bawah ke atas saat hover */
+                    md:translate-y-4 md:group-hover:translate-y-0"
+                >
                     {img.caption}
                 </p>
             </div>

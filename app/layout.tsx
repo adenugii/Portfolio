@@ -23,8 +23,8 @@ export default function RootLayout({
         {/* Bungkus dengan ThemeProvider */}
         <ThemeProvider
           attribute="class"
-          defaultTheme="system"
-          enableSystem
+          defaultTheme="dark"
+          enableSystem={false}
           disableTransitionOnChange
         >
           <SmoothScroll>

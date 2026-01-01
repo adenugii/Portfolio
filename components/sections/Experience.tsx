@@ -41,12 +41,15 @@ export default function Experience() {
                 {/* Dot Timeline */}
                 <span className="absolute -left-[41px] top-1 h-5 w-5 rounded-full border-4 border-white dark:border-zinc-950 bg-zinc-300 dark:bg-zinc-700" />
                 
-                <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between mb-2">
+                <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between mb-2 gap-2 sm:gap-0">
                   <h3 className="font-bold text-lg text-zinc-900 dark:text-zinc-100">{exp.role}</h3>
-                  <span className="text-xs font-medium px-2 py-1 bg-zinc-100 dark:bg-zinc-800 rounded-md text-zinc-500">
+                  
+                  {/* UPDATE DISINI: Tambahkan 'w-fit' */}
+                  <span className="w-fit text-xs font-medium px-2 py-1 bg-zinc-100 dark:bg-zinc-800 rounded-md text-zinc-500 border border-zinc-200 dark:border-zinc-700/50">
                     {exp.period}
                   </span>
                 </div>
+                
                 <p className="text-sm font-medium text-zinc-700 dark:text-zinc-300 mb-2">
                     {exp.company}
                 </p>
@@ -82,7 +85,7 @@ export default function Experience() {
                     <h3 className="font-bold text-zinc-900 dark:text-zinc-100 group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors">
                         {award.title}
                     </h3>
-                    <span className="text-xs font-mono text-zinc-400">
+                    <span className="text-xs font-mono text-zinc-400 shrink-0 ml-2">
                         {award.year}
                     </span>
                 </div>
