@@ -9,7 +9,7 @@ import {
 
 export const HERO_DATA = {
   name: "Ade Nugroho",
-  role: "Front-End Engineer | Interactive Experiences",
+  role: "Front-End Developer | Interactive Experiences",
   location: "Malang, East Java, ID",
   status: "Open for Front-End Internships",
   summary: "Information Technology undergraduate specializing in Front-End Engineering. Focused on building highly interactive and data-driven web interfaces using Next.js and TypeScript. Experienced in optimizing rendering performance for animation-heavy applications and architecting complex state logic for real-time data synchronization.",
