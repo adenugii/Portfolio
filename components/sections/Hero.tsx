@@ -31,7 +31,6 @@ export default function Hero() {
             </motion.h1>
             
             {/* --- KHUSUS MOBILE: FOTO DI TENGAH --- */}
-            {/* Hanya muncul di Mobile (lg:hidden). Di Desktop hilang. */}
             <motion.div
                initial={{ opacity: 0, scale: 0.9 }}
                animate={{ opacity: 1, scale: 1 }}
@@ -45,7 +44,6 @@ export default function Hero() {
                     className="object-cover scale-100 grayscale-0"
                     priority
                 />
-                 {/* Gradient Overlay Halus */}
                  <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent" />
             </motion.div>
             {/* ----------------------------------- */}
@@ -101,15 +99,15 @@ export default function Hero() {
         </div>
 
         {/* --- KOLOM KANAN: Image Showcase (KHUSUS DESKTOP) --- */}
-        {/* hidden di mobile, block di lg (desktop) */}
         <motion.div 
            initial={{ opacity: 0, scale: 0.95 }}
            animate={{ opacity: 1, scale: 1 }}
            transition={{ duration: 0.8, delay: 0.2 }}
            className="hidden lg:flex lg:col-span-4 relative justify-end"
         >
-            {/* Container Gambar Desktop */}
-            <div className="relative w-[350px] h-[450px] rounded-[2rem] overflow-hidden group bg-zinc-50 dark:bg-zinc-900 shadow-2xl rotate-3 hover:rotate-0 transition-all duration-500">
+            {/* Container Gambar Desktop - Miring dihapus */}
+            {/* PERUBAHAN: Hapus 'rotate-3 hover:rotate-0' */}
+            <div className="relative w-[350px] h-[450px] rounded-[2rem] overflow-hidden group bg-zinc-50 dark:bg-zinc-900 shadow-2xl transition-all duration-500">
                 
                 <Image 
                     src="/me.png" 
