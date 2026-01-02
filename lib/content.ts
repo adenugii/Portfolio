@@ -369,7 +369,7 @@ export const PROJECTS = [
     slug: "karangrejo",
     description: "Official digital profile for Desa Karangrejo. Bridged technical implementation with village officials.",
     tags: ["Next.js", "Leaflet", "Decoupled CMS"],
-    link: "https://web-desa-mmd.vercel.app/", // Update link jika ada, atau gunakan repo
+    link: "https://karangrejoblitar.com/", // Update link jika ada, atau gunakan repo
     repo: "https://github.com/adenugii/WebKarangrejo",
     featured: false,
     gradient: "from-sky-500/20 to-indigo-500/20",
