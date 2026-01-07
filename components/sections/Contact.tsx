@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 import { motion } from "framer-motion";
-import { ArrowUpRight, Mail, Copy, Check } from "lucide-react";
+import { ArrowUpRight, Mail, Copy, Check, Download } from "lucide-react";
 import Link from "next/link";
 
 export default function Contact() {
@@ -40,8 +40,10 @@ export default function Contact() {
           If you need someone who bridges the gap between design and engineering, I'd love to discuss how I can contribute.
         </p>
         
-        <div className="flex flex-col md:flex-row gap-4 justify-center items-center pt-8 w-full sm:w-auto">
-            {/* Tombol Utama: Email */}
+        {/* Container Tombol */}
+        <div className="flex flex-col sm:flex-row flex-wrap gap-4 justify-center items-center pt-8 w-full">
+            
+            {/* 1. Tombol Utama: Email */}
             <Link 
                 href={`mailto:${email}`}
                 className="group flex items-center gap-3 px-8 py-4 bg-zinc-900 dark:bg-white text-white dark:text-black rounded-full text-lg font-semibold hover:scale-105 transition-transform w-full sm:w-auto justify-center"
@@ -50,7 +52,17 @@ export default function Contact() {
                 Let's get in touch
             </Link>
 
-            {/* Tombol Copy Email (Fitur UX Tambahan) */}
+            {/* 2. Tombol Download CV (BARU) */}
+            <a 
+                href="/cv.pdf" 
+                download="CV - Ade Nugroho.pdf"
+                className="group flex items-center gap-2 px-6 py-4 rounded-full border border-zinc-200 dark:border-zinc-800 hover:bg-zinc-100 dark:hover:bg-zinc-900 transition-all font-medium text-zinc-600 dark:text-zinc-300 w-full sm:w-auto justify-center"
+            >
+                <Download className="w-4 h-4 group-hover:text-zinc-900 dark:group-hover:text-white transition-colors" />
+                <span>Download CV</span>
+            </a>
+
+            {/* 3. Tombol Copy Email */}
             <button
                 onClick={handleCopy}
                 className="group flex items-center gap-2 px-6 py-4 rounded-full border border-zinc-200 dark:border-zinc-800 hover:bg-zinc-100 dark:hover:bg-zinc-900 transition-all font-medium text-zinc-600 dark:text-zinc-300 w-full sm:w-auto justify-center"
@@ -69,7 +81,7 @@ export default function Contact() {
                 )}
             </button>
 
-            {/* LinkedIn Link */}
+            {/* 4. LinkedIn Link */}
             <Link 
                 href="https://linkedin.com/in/adenugroho"
                 target="_blank"
