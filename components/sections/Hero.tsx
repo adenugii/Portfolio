@@ -110,8 +110,8 @@ export default function Hero() {
             <div className="relative w-[350px] h-[450px] rounded-[2rem] overflow-hidden group bg-zinc-50 dark:bg-zinc-900 shadow-2xl transition-all duration-500">
                 
                 <Image 
-                    src="/me.png" 
-                    alt="Profile Desktop" 
+                    src="/me.jpg" 
+                    alt="Profile" 
                     fill 
                     className="object-cover transition-all duration-700 ease-in-out
                         scale-100 grayscale-0 
