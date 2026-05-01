@@ -23,14 +23,6 @@ export default function Contact() {
         transition={{ duration: 0.5 }}
         className="space-y-8 flex flex-col items-center"
       >
-        <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-emerald-100 dark:bg-emerald-900/30 border border-emerald-200 dark:border-emerald-700/50 text-emerald-700 dark:text-emerald-400 text-xs font-medium mb-4">
-          <span className="relative flex h-2 w-2">
-            <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
-            <span className="relative inline-flex rounded-full h-2 w-2 bg-emerald-500"></span>
-          </span>
-          Available for Internship
-        </div>
-
         <h2 className="text-4xl md:text-6xl font-bold tracking-tight text-zinc-900 dark:text-zinc-100 max-w-3xl">
           Let's build something extraordinary together.
         </h2>

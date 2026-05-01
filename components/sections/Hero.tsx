@@ -38,7 +38,7 @@ export default function Hero() {
                className="lg:hidden relative w-48 h-64 mx-auto my-6 rounded-2xl overflow-hidden shadow-2xl bg-zinc-100 dark:bg-zinc-800"
             >
                 <Image 
-                    src="/me.png" 
+                    src="/me.jpg" 
                     alt="Profile Mobile" 
                     fill 
                     className="object-cover scale-100 grayscale-0"
