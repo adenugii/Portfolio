@@ -458,17 +458,17 @@ export const PROJECTS = [
 
 export const EXPERIENCE = [
   {
-    role: "Laboratory Assistant",
-    company: "Fakultas Ilmu Komputer (FILKOM) UB",
-    period: "Aug 2025 - Dec 2025",
-    description: "Mentored 50+ students on Modern Web Dev. Conducted weekly code reviews focusing on debugging strategies, clean code structure, and Git workflow fundamentals.",
+    role: "Front-End Developer Intern",
+    company: "Suitmedia Digital Agency",
+    period: "Feb 2026 - Present",
+    description: "Developing responsive web interfaces and performing complex UI slicing for enterprise projects using modern JavaScript frameworks.",
     type: "work"
   },
   {
-    role: "Digitalization Coordinator (MMD)",
-    company: "Mahasiswa Membangun Desa - UB",
-    period: "Jun 2025 - Jul 2025",
-    description: "Led digital transformation for Karangrejo Village. Bridged communication between technical teams and village officials to ensure sustainable system adoption.",
+    role: "Laboratory Assistant",
+    company: "Fakultas Ilmu Komputer (FILKOM) UB",
+    period: "Aug 2025 - Present",
+    description: "Mentored 50+ students on Modern Web Dev. Conducted weekly code reviews focusing on debugging strategies, clean code structure, and Git workflow fundamentals.",
     type: "work"
   },
   {
