@@ -4,15 +4,15 @@ import {
   SiTailwindcss, SiFramer, SiHtml5, SiCss3, 
   SiNodedotjs, SiFirebase, SiKotlin, SiJetpackcompose, 
   SiSolidity, SiPostman, SiAndroid, SiGreensock, 
-  SiDocker, SiGit 
+  SiDocker, SiGit, SiVuedotjs, SiNuxtdotjs 
 } from "react-icons/si";
 
 export const HERO_DATA = {
   name: "Ade Nugroho",
   role: "Front-End Developer | Interactive Experiences",
   location: "Malang, East Java, ID",
-  status: "Open for Front-End Internships",
-  summary: "Information Technology undergraduate specializing in Front-End Engineering. Focused on building highly interactive and data-driven web interfaces using Next.js and TypeScript. Experienced in optimizing rendering performance for animation-heavy applications and architecting complex state logic for real-time data synchronization.",
+  status: "Open for Front-End Roles",
+  summary: "Information Technology undergraduate specializing in Front-End Engineering. Focused on building highly interactive and data-driven web interfaces using React.js, Next.js, and TypeScript. Experienced in translating complex UI/UX designs into production-ready code, integrating RESTful APIs, and maintaining clean, modular component structures.",
   socials: [
     {
       name: "GitHub",
@@ -40,7 +40,85 @@ export const NAV_LINKS = [
 ];
 
 export const PROJECTS = [
-  // --- PROJECT 1: SlotReality ---
+  // --- PROJECT 1: Capital Market Web Platform (KSEI) ---
+  {
+    title: "Capital Market Web Platform",
+    slug: "capital-market",
+    description: "Resolved critical API integrations and UI bugs during UAT phase for an enterprise data management system.",
+    tags: ["Nuxt.js", "Vue.js", "API Integration"],
+    link: "#",
+    repo: "#",
+    featured: false, // KOTAK KECIL
+    gradient: "from-emerald-600/20 to-teal-600/20",
+    detail: {
+      shortOverview: "An enterprise data management system used in the capital market sector. I joined the project during its crucial User Acceptance Testing (UAT) phase at Suitmedia to ensure a stable production release.",
+      problem: "During the UAT phase, the existing platform faced numerous critical API integration issues and severe UI bugs that prevented smooth data flow and compromised the user experience for capital market stakeholders.",
+      solution: "Conducted intensive debugging and code refactoring using Nuxt.js. I tracked down and resolved data synchronization issues between the frontend and complex RESTful APIs, while simultaneously fixing layout breaks and responsive design flaws.",
+      features: [
+        "Complex REST API Integrations",
+        "Strict State Management",
+        "Robust Error Handling",
+        "High-Performance Data Display"
+      ],
+      techStack: [
+        { name: "Nuxt.js", icon: "SiNuxtdotjs", purpose: "Vue Framework for the main application structure." },
+        { name: "Vue.js", icon: "SiVuedotjs", purpose: "Core library for reactive interfaces." },
+        { name: "REST API", icon: "SiPostman", purpose: "Handling complex financial data transactions." }
+      ],
+      process: [
+        { title: "Issue Triage", description: "Categorizing and prioritizing UAT bug reports based on severity and impact on the release schedule." },
+        { title: "API Debugging", description: "Tracing failed requests, standardizing payloads, and fixing state mutation errors." },
+        { title: "UI Refinement", description: "Fixing layout shifts, broken components, and ensuring pixel-perfect alignment according to the original design." },
+        { title: "Deployment Support", description: "Collaborating with backend and QA teams to verify fixes before production release." }
+      ],
+      challenges: [
+        { title: "Debugging Existing Codebase", description: "Jumping into a large, pre-existing enterprise codebase during UAT required rapid comprehension of complex data flows and state management architectures." }
+      ],
+      results: "Successfully resolved all assigned critical blockers, ensuring a stable and timely production release for the client.",
+      images: [] 
+    }
+  },
+
+  // --- PROJECT 2: Corporate Banking Web Portal (BSN) ---
+  {
+    title: "Corporate Banking Web Portal",
+    slug: "corporate-banking",
+    description: "Enterprise dynamic Server-Driven UI architecture integrating headless CMS for major financial institution.",
+    tags: ["Nuxt.js", "Sitecore JSS", "Tailwind"],
+    link: "#", 
+    repo: "#", 
+    featured: true, // KOTAK BESAR
+    gradient: "from-blue-600/20 to-indigo-600/20",
+    detail: {
+      shortOverview: "A fully dynamic, Server-Driven UI web portal built for a major corporate banking institution during my internship at Suitmedia. The architecture relies on headless CMS integration where page layouts and content are seamlessly rendered based on backend API payloads.",
+      problem: "Enterprise banking platforms require extreme flexibility to update content and layouts without constantly deploying new frontend code. Traditional static site generation or hardcoded layouts cannot keep up with the dynamic marketing and operational needs of a major financial institution.",
+      solution: "Engineered a Server-Driven UI architecture using Nuxt.js combined with Sitecore JSS. Instead of hardcoding pages, the frontend acts as a renderer that parses backend payloads containing a list of components and their respective data, rendering the complex UI fully dynamically.",
+      features: [
+        "Fully Dynamic Server-Driven UI",
+        "Sitecore JSS Headless CMS Integration",
+        "Modular & Reusable UI Components",
+        "Rigorous Cross-Browser Slicing"
+      ],
+      techStack: [
+        { name: "Nuxt.js", icon: "SiNuxtdotjs", purpose: "Vue Framework for Server-Side Rendering and routing." },
+        { name: "Sitecore JSS", icon: "SiJavascript", purpose: "Headless CMS integration for dynamic layout parsing." },
+        { name: "Tailwind CSS", icon: "SiTailwindcss", purpose: "Utility-first CSS for rapid mobile-responsive styling." }
+      ],
+      process: [
+        { title: "Architecture Design", description: "Understanding the Sitecore JSS data structure and planning the component mapping strategy in Nuxt.js." },
+        { title: "Component Development", description: "Building highly modular components that can adapt to varying data structures provided by the headless CMS." },
+        { title: "UI Slicing & Implementation", description: "Translating complex banking UI/UX designs into pixel-perfect code." },
+        { title: "Responsiveness & QA", description: "Conducting rigorous cross-viewport testing to ensure accessibility and layout integrity." }
+      ],
+      challenges: [
+        { title: "Dynamic Rendering", description: "Handling unpredictable component lists from the backend required robust fallback mechanisms and strict type/prop validation." }
+      ],
+      results: "Successfully delivered a highly flexible enterprise portal, significantly reducing the turnaround time for content updates by the client's marketing team.",
+      images: [] 
+    }
+  },
+
+  // --- PROJECT 3: SlotReality ---
   {
     title: "SlotReality",
     slug: "slotreality",
@@ -101,7 +179,7 @@ export const PROJECTS = [
     }
   },
 
-  // --- PROJECT 3: CalorEase ---
+  // --- PROJECT 4: CalorEase ---
   {
      title: "CalorEase",
      slug: "calorease",
@@ -158,7 +236,7 @@ export const PROJECTS = [
      }
   },
 
-  // --- PROJECT 4: EasyGo ---
+  // --- PROJECT 5: EasyGo ---
   {
     title: "EasyGo - Inclusive Maps",
     slug: "easygo",
@@ -208,7 +286,7 @@ export const PROJECTS = [
      }
   },
 
-  // --- PROJECT 2: PrediAI ---
+  // --- PROJECT 6: PrediAI ---
   {
     title: "PrediAI - Medical System",
     slug: "prediai",
@@ -255,7 +333,7 @@ export const PROJECTS = [
     }
   },
 
-  // --- PROJECT 5: Qnectify ---
+  // --- PROJECT 7: Qnectify ---
   {
     title: "Qnectify",
     slug: "qnectify",
@@ -310,7 +388,7 @@ export const PROJECTS = [
      }
   },
 
-  // --- PROJECT 6: SENTINEL ---
+  // --- PROJECT 8: SENTINEL ---
   {
     title: "SENTINEL Marketplace",
     slug: "sentinel",
@@ -333,7 +411,7 @@ export const PROJECTS = [
         techStack: [
             { name: "Next.js 16", icon: "SiNextdotjs", purpose: "Frontend framework with App Router and Server Actions." },
             { name: "Solidity", icon: "SiSolidity", purpose: "Smart Contract logic for warranty minting and verification." },
-            { name: "Midtrans", icon: "SiPostman", purpose: "Payment Gateway integration for secure fiat transactions." }, // Icon placeholder
+            { name: "Midtrans", icon: "SiPostman", purpose: "Payment Gateway integration for secure fiat transactions." }, 
             { name: "Express.js", icon: "SiNodedotjs", purpose: "Backend REST API handling business logic and Web3 interactions." }
         ],
         process: [
@@ -363,13 +441,13 @@ export const PROJECTS = [
      }
   },
 
-  // --- PROJECT 7: Karangrejo Digital Village ---
+  // --- PROJECT 9: Karangrejo Digital Village ---
   {
     title: "Karangrejo Digital Village",
     slug: "karangrejo",
     description: "Official digital profile for Desa Karangrejo. Bridged technical implementation with village officials.",
     tags: ["Next.js", "Leaflet", "Decoupled CMS"],
-    link: "https://karangrejoblitar.com/", // Update link jika ada, atau gunakan repo
+    link: "https://karangrejoblitar.com/", 
     repo: "https://github.com/adenugii/WebKarangrejo",
     featured: false,
     gradient: "from-sky-500/20 to-indigo-500/20",
@@ -415,59 +493,21 @@ export const PROJECTS = [
           "/projects/karangrejo-11.png"
         ]
      }
-  },
-
-  // --- PROJECT 8: F1 Race Strategy (Placeholder) ---
-  {
-    title: "F1 Race Strategy Engine",
-    slug: "f1-strategy",
-    description: "Upcoming Project. Analytics dashboard to simulate race strategies using historical data.",
-    tags: ["In Development", "Data Viz", "AI"],
-    link: "#",
-    repo: "#",
-    upcoming: true,
-    featured: true,
-    gradient: "from-zinc-500/20 to-zinc-700/20",
-    detail: {
-        shortOverview: "An advanced analytics dashboard designed to simulate Formula 1 race strategies. It uses historical data and tyre degradation models to predict optimal pit stops.",
-        problem: "Race strategy is complex and often unintuitive for fans. Existing visualization tools are either too simple or inaccessible to the public.",
-        solution: "I am building a visual dashboard that processes lap time data to visualize the 'undercut' and 'overcut' potential in real-time scenarios.",
-        features: [
-            "Tyre Degradation Modeling", 
-            "Pit Window Calculator", 
-            "Interactive Race Graph",
-            "Driver Pace Comparison"
-        ],
-        techStack: [
-            { name: "Python", icon: "SiJavascript", purpose: "Data Processing & Modeling." }, // Icon placeholder
-            { name: "D3.js", icon: "SiJavascript", purpose: "Complex Data Visualization." },
-            { name: "Next.js", icon: "SiNextdotjs", purpose: "Dashboard Interface." }
-        ],
-        process: [
-            { title: "Data Sourcing", description: "Integrating with OpenF1 API." },
-            { title: "Modeling", description: "Developing the tyre wear algorithm." }
-        ],
-        challenges: [
-            { title: "Data Volume", description: "Handling millions of data points for live simulation." }
-        ],
-        results: "Currently in active development. Prototype expected in Q4 2025.",
-        images: []
-     }
   }
 ];
 
 export const EXPERIENCE = [
   {
     role: "Front-End Developer Intern",
-    company: "Suitmedia Digital Agency",
-    period: "Feb 2026 - Present",
+    company: "Suitmedia Kreasi Indonesia",
+    period: "Jan 2026 - Jun 2026",
     description: "Developing responsive web interfaces and performing complex UI slicing for enterprise projects using modern JavaScript frameworks.",
     type: "work"
   },
   {
     role: "Laboratory Assistant",
     company: "Fakultas Ilmu Komputer (FILKOM) UB",
-    period: "Aug 2025 - Present",
+    period: "Aug 2025 - Jun 2026",
     description: "Mentored 50+ students on Modern Web Dev. Conducted weekly code reviews focusing on debugging strategies, clean code structure, and Git workflow fundamentals.",
     type: "work"
   },
@@ -504,8 +544,10 @@ export const AWARDS = [
 export const SKILLS = [
   // --- Priority: Front-End Engineering ---
   { name: "Next.js", icon: SiNextdotjs },
+  { name: "Nuxt.js", icon: SiNuxtdotjs },
   { name: "TypeScript", icon: SiTypescript },
   { name: "React", icon: SiReact },
+  { name: "Vue.js", icon: SiVuedotjs },
   { name: "Tailwind CSS", icon: SiTailwindcss },
   { name: "Framer Motion", icon: SiFramer },
   { name: "GSAP", icon: SiGreensock },

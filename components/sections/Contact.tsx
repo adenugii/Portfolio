@@ -28,8 +28,8 @@ export default function Contact() {
         </h2>
         
         <p className="text-lg md:text-xl text-zinc-500 dark:text-zinc-400 max-w-3xl mx-auto leading-relaxed">
-          I'm currently looking for <strong>Front-End or Mobile Development Internships</strong>. 
-          If you need someone who bridges the gap between design and engineering, I'd love to discuss how I can contribute.
+          I'm currently open for <strong>Full-Time Front-End Developer opportunities</strong>. 
+          If you need someone who translates complex designs into production-ready code and builds real, scalable systems, I'd love to discuss how I can contribute.
         </p>
         
         {/* Container Tombol */}
