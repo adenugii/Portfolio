@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 import { motion } from "framer-motion";
-import { ArrowUpRight, Mail, Copy, Check, Download } from "lucide-react";
+import { ArrowUpRight, Mail, Copy, Check } from "lucide-react";
 import Link from "next/link";
 
 export default function Contact() {
@@ -44,17 +44,7 @@ export default function Contact() {
                 Let's get in touch
             </Link>
 
-            {/* 2. Tombol Download CV (BARU) */}
-            <a 
-                href="/cv.pdf" 
-                download="CV - Ade Nugroho.pdf"
-                className="group flex items-center gap-2 px-6 py-4 rounded-full border border-zinc-200 dark:border-zinc-800 hover:bg-zinc-100 dark:hover:bg-zinc-900 transition-all font-medium text-zinc-600 dark:text-zinc-300 w-full sm:w-auto justify-center"
-            >
-                <Download className="w-4 h-4 group-hover:text-zinc-900 dark:group-hover:text-white transition-colors" />
-                <span>Download CV</span>
-            </a>
-
-            {/* 3. Tombol Copy Email */}
+            {/* 2. Tombol Copy Email */}
             <button
                 onClick={handleCopy}
                 className="group flex items-center gap-2 px-6 py-4 rounded-full border border-zinc-200 dark:border-zinc-800 hover:bg-zinc-100 dark:hover:bg-zinc-900 transition-all font-medium text-zinc-600 dark:text-zinc-300 w-full sm:w-auto justify-center"
@@ -73,7 +63,7 @@ export default function Contact() {
                 )}
             </button>
 
-            {/* 4. LinkedIn Link */}
+            {/* 3. LinkedIn Link */}
             <Link 
                 href="https://linkedin.com/in/adenugroho"
                 target="_blank"
